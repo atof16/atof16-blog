@@ -5,7 +5,7 @@ export default function Blog({ blog }) {
   return (
     <div>
       <h1>Blog</h1>
-      <div>this is blog page!!</div>;
+      <div>this is blog page!!</div>
       <ul>
         {blog.map((blog) => (
           <li key={blog.id}>
