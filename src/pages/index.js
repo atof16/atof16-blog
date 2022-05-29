@@ -8,17 +8,23 @@ export default function Home() {
       <Head>
         <title>Atof16 blog</title>
       </Head>
-      <h1 className='title'>Hello World!</h1>
-      <p>Welcome to Atof16 home page!</p>
-      <Link href='/blog'>
-        <a>Blog</a>
-      </Link>
-      <Link href='/profile'>
-        <a>Profile</a>
-      </Link>
-      <Link href='/works'>
-        <a>Works</a>
-      </Link>
+      <div className={styles.messages}>
+        <h1 className={styles.helloWorld}>Hello World!</h1>
+        <p className={styles.welcomeMessage}>Welcome to Atof16 home page!</p>
+      </div>
+      <nav>
+        <div className={styles.contents}>
+          <Link href='/blog'>
+            <a className={styles.content}>Blog</a>
+          </Link>
+          <Link href='/profile'>
+            <a className={styles.content}>Profile</a>
+          </Link>
+          <Link href='/works'>
+            <a className={styles.content}>Works</a>
+          </Link>
+        </div>
+      </nav>
     </div>
   );
 }
