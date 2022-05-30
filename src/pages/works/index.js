@@ -1,8 +1,12 @@
+import Layout from '../../components/layout';
+
 export default function Works() {
   return (
-    <div>
-      <h1>Works</h1>
-      <div>作ったもの</div>
-    </div>
+    <Layout>
+      <div>
+        <h1>Works</h1>
+        <div>作ったものをここに載せていきます</div>
+      </div>
+    </Layout>
   );
 }

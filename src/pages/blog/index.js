@@ -1,9 +1,14 @@
+import Head from 'next/head';
 import Link from 'next/link';
+import Layout from '../../components/layout';
 import { client } from '../../lib/client';
 
 export default function Blog({ blog }) {
   return (
-    <div>
+    <Layout>
+      <Head>
+        <title>Blog</title>
+      </Head>
       <h1>Blog</h1>
       <div>this is blog page!!</div>
       <ul>
@@ -15,7 +20,7 @@ export default function Blog({ blog }) {
           </li>
         ))}
       </ul>
-    </div>
+    </Layout>
   );
 }
 

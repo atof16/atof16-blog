@@ -1,3 +1,10 @@
-export default function Layout({ childlen }) {
-  return <div>{childlen}</div>;
+import Header from './header';
+
+export default function Layout({ children }) {
+  return (
+    <div>
+      <Header />
+      <main>{children}</main>
+    </div>
+  );
 }

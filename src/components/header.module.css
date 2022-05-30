@@ -1,0 +1,29 @@
+.header {
+  max-width: 1220px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headerNav {
+  display: flex;
+  margin: 25px;
+  justify-content: center;
+}
+
+.headerItem {
+  text-align: center;
+  font-size: 26px;
+}
+
+.headerItemLink {
+  position: relative;
+  display: block;
+  padding: 15px 15px;
+  border-bottom: 2px solid transparent;
+}
+
+.headerItemLink:hover {
+  border-bottom: 2px solid #0086ad;
+}
