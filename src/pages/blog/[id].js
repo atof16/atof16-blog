@@ -1,16 +1,28 @@
+import Link from 'next/link';
+import Date from '../../components/date';
+import Layout from '../../components/layout';
 import { client } from '../../lib/client';
+import styles from './Blog.module.css';
 
 export default function BlogId({ blog }) {
   return (
-    <main>
-      <h1>{blog.title}</h1>
-      <p>{blog.publishedAt}</p>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `${blog.body}`,
-        }}
-      />
-    </main>
+    <Layout>
+      <div className={styles.blogArticleContainer}>
+        <h2 className={styles.blogArticleTitle}>{blog.title}</h2>
+        <div className={styles.blogArticlePublishedAt}>
+          <Date dateString={blog.publishedAt} />
+        </div>
+        <div
+          className={styles.blogArticleBody}
+          dangerouslySetInnerHTML={{
+            __html: `${blog.body}`,
+          }}
+        />
+        <Link href='/blog'>
+          <a>←ブログ一覧へ戻る</a>
+        </Link>
+      </div>
+    </Layout>
   );
 }
 
