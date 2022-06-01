@@ -1,0 +1,15 @@
+.worksContainer {
+  justify-content: center;
+  max-width: 840px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pageTitle {
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
