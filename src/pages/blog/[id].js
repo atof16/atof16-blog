@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Date from '../../components/date';
 import Layout from '../../components/layout';
 import { client } from '../../lib/client';
+import markdownTohtml from '../../lib/transpiler';
 import styles from './Blog.module.css';
 
 export default function BlogId({ blog }) {
@@ -15,7 +16,7 @@ export default function BlogId({ blog }) {
         <div
           className={styles.blogArticleBody}
           dangerouslySetInnerHTML={{
-            __html: `${blog.body}`,
+            __html: `${blog.content}`,
           }}
         />
         <Link href='/blog'>
@@ -37,10 +38,13 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
   const id = context.params.id;
   const data = await client.get({ endpoint: 'blog', contentId: id });
+  const bodyHTML = await markdownTohtml(data.body);
+  const content = bodyHTML.toString();
+  const postData = { ...data, content };
 
   return {
     props: {
-      blog: data,
+      blog: postData,
     },
   };
 };
