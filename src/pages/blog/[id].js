@@ -20,7 +20,7 @@ export default function BlogId({ blog }) {
           }}
         />
         <Link href='/blog'>
-          <a>←ブログ一覧へ戻る</a>
+          <a className={styles.backToBlogTop}>←ブログ一覧へ戻る</a>
         </Link>
       </div>
     </Layout>

@@ -24,6 +24,7 @@
   border-radius: 5px;
   margin-bottom: 10px;
   border-bottom: 2px solid #e6e6e6;
+  list-style: none;
 }
 
 .blogTitle {
@@ -62,7 +63,8 @@
 .blogArticleTitle {
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: left;
+  font-size: 40px;
 }
 
 .blogArticlePublishedAt {

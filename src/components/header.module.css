@@ -15,6 +15,7 @@
 .headerItem {
   text-align: center;
   font-size: 26px;
+  list-style: none;
 }
 
 .headerItemLink {
@@ -22,8 +23,10 @@
   display: block;
   padding: 15px 15px;
   border-bottom: 2px solid transparent;
+  color: #000;
 }
 
 .headerItemLink:hover {
   border-bottom: 2px solid #0086ad;
+  color: #0086ab;
 }
