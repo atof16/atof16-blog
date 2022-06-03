@@ -9,9 +9,11 @@ export default function BlogId({ blog }) {
   return (
     <Layout>
       <div className={styles.blogArticleContainer}>
-        <h2 className={styles.blogArticleTitle}>{blog.title}</h2>
-        <div className={styles.blogArticlePublishedAt}>
-          <Date dateString={blog.publishedAt} />
+        <div className={styles.blogArticleInfo}>
+          <h2 className={styles.blogArticleTitle}>{blog.title}</h2>
+          <div className={styles.blogArticlePublishedAt}>
+            <Date dateString={blog.publishedAt} />
+          </div>
         </div>
         <div
           className={styles.blogArticleBody}
