@@ -13,8 +13,8 @@ export default function Blog({ blog }) {
       </Head>
       <div className={styles.blogContainer}>
         <h1 className={styles.pageTitle}>Blog</h1>
-        <div className={styles.blogArticles}>
-          <ul>
+        <div>
+          <ul className={styles.blogArticles}>
             {blog.map((blog) => (
               <li key={blog.id} className={styles.blogArticle}>
                 <Link href={`/blog/${blog.id}`}>

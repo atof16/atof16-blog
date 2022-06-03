@@ -3,7 +3,7 @@ import Date from '../../components/date';
 import Layout from '../../components/layout';
 import { client } from '../../lib/client';
 import markdownTohtml from '../../lib/transpiler';
-import styles from './Blog.module.css';
+import styles from './BlogId.module.css';
 
 export default function BlogId({ blog }) {
   return (

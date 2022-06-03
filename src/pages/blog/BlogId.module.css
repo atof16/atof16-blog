@@ -1,0 +1,33 @@
+.blogArticleContainer {
+  align-items: center;
+  justify-content: center;
+  max-width: 840px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blogArticleTitle {
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: 40px;
+}
+
+.blogArticlePublishedAt {
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+}
+
+.blogArticleBody {
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.backToBlogTop {
+  color: #0086ab;
+}
