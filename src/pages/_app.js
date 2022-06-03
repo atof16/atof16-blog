@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-import 'highlight.js/styles/default.css';
+import 'highlight.js/styles/monokai-sublime.css';
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />;
