@@ -1,27 +1,28 @@
 .header {
-  max-width: 840px;
+  max-width: 1530px;
   padding-left: 20px;
   padding-right: 20px;
+  height: 40px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .headerNav {
+  padding-inline-start: 0px;
   display: flex;
-  margin: 25px;
-  justify-content: center;
+  justify-content: left;
 }
 
 .headerItem {
   text-align: center;
-  font-size: 26px;
+  font-size: 22px;
   list-style: none;
 }
 
 .headerItemLink {
   position: relative;
   display: block;
-  padding: 15px 15px;
+  margin-right: 15px;
   border-bottom: 2px solid transparent;
   color: #000;
 }
@@ -29,4 +30,26 @@
 .headerItemLink:hover {
   border-bottom: 2px solid #0086ad;
   color: #0086ab;
+}
+
+.headerItemIcon {
+  position: relative;
+  display: none;
+  color: #000;
+  margin-right: 15px;
+}
+
+@media (max-width: 600px) {
+  .headerItemIcon {
+    position: relative;
+    display: block;
+  }
+
+  .headerItemIcon:hover {
+    color: #0086ab;
+  }
+
+  .headerItemLink {
+    display: none;
+  }
 }
