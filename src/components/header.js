@@ -8,9 +8,9 @@ export default function Header() {
       <div className={styles.header}>
         <nav>
           <ul className={styles.headerNav}>
-            <li className={styles.headerItem}>
+            <li className={styles.logo}>
               <Link href='/'>
-                <a className={styles.headerItemLink}>Home</a>
+                <a className={styles.logoLink}>Atof16.dev</a>
               </Link>
               <Link href='/'>
                 <a>
