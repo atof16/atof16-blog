@@ -121,10 +121,12 @@
 
 .helloWorld {
   font-size: 60px;
+  font-weight: 900;
 }
 
 .welcomeMessage {
   font-size: 20px;
+  font-weight: 500;
 }
 
 .contents {
@@ -149,6 +151,7 @@
   margin: 10px;
   transition: 0.25s;
   border: 2px solid #0086ad;
+  font-weight: 900;
 }
 
 .content:hover {
