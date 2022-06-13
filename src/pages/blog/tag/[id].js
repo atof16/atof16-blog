@@ -28,9 +28,11 @@ export default function Blog({ blog, totalCount, currentPageNumber }) {
                 <div className={styles.blogTags}>
                   {blog.tags.map((tag) => {
                     return (
-                      <div key={tag.id} className={styles.blogTag}>
-                        #{tag.id}
-                      </div>
+                      <li key={tag.id} className={styles.blogTag}>
+                        <Link href={`/blog/tag/${tag.id}`}>
+                          <a className={styles.blogTagLink}>#{tag.id}</a>
+                        </Link>
+                      </li>
                     );
                   })}
                 </div>
