@@ -26,8 +26,11 @@
   border-radius: 5px;
   border-bottom: 2px solid #e6e6e6;
   list-style: none;
-  display: block;
   padding: 10px;
+}
+
+.blogArticleLink {
+  display: block;
 }
 
 .blogTitle {
@@ -35,7 +38,6 @@
   font-weight: bold;
   color: #000;
   margin: 0px;
-  padding-bottom: 10px;
 }
 
 .blogPublishedAt {
@@ -51,4 +53,13 @@
 .blogArticle:hover {
   background-color: #f2f2f2;
   box-shadow: 0px 1px 2px #e6e6e6;
+}
+
+.blogTags {
+  display: flex;
+}
+
+.blogTag {
+  margin-right: 4px;
+  font-size: 18px;
 }
