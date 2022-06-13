@@ -15,18 +15,29 @@ export default function Blog({ blog, totalCount }) {
       <div className={styles.blogContainer}>
         <h1 className={styles.pageTitle}>Blog</h1>
         <ul className={styles.blogArticles}>
-          {blog.map((blog) => (
-            <li key={blog.id} className={styles.blogArticle}>
-              <Link href={`/blog/${blog.id}`}>
-                <a>
-                  <h2 className={styles.blogTitle}>{blog.title}</h2>
-                  <div className={styles.blogPublishedAt}>
-                    <Date dateString={blog.publishedAt} />
-                  </div>
-                </a>
-              </Link>
-            </li>
-          ))}
+          {blog.map((blog) => {
+            return (
+              <li key={blog.id} className={styles.blogArticle}>
+                <Link href={`/blog/${blog.id}`}>
+                  <a className={styles.blogArticleLink}>
+                    <h2 className={styles.blogTitle}>{blog.title}</h2>
+                  </a>
+                </Link>
+                <div className={styles.blogTags}>
+                  {blog.tags.map((tag) => {
+                    return (
+                      <div key={tag.id} className={styles.blogTag}>
+                        #{tag.id}
+                      </div>
+                    );
+                  })}
+                </div>
+                <div className={styles.blogPublishedAt}>
+                  <Date dateString={blog.publishedAt} />
+                </div>
+              </li>
+            );
+          })}
         </ul>
       </div>
 
